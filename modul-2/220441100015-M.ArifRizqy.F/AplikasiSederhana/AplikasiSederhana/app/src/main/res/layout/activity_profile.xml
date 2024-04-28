@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/textTitleHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Universitas Trunojoyo"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textTitleHeader"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleHeader" />
+
+        <ImageButton
+            android:id="@+id/logo_utm"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="22dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_logo_utm"
+            app:layout_constraintBottom_toBottomOf="@+id/textHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textTitleHeader"
+            app:layout_constraintVertical_bias="0.428" />
+
+        <ImageView
+            android:id="@+id/imgProfileUTM"
+            android:layout_width="169dp"
+            android:layout_height="169dp"
+            android:layout_marginTop="68dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/logo_utm"
+            app:layout_constraintStart_toStartOf="@+id/textHeader"
+            app:layout_constraintTop_toBottomOf="@+id/textHeader"
+            app:srcCompat="@drawable/img_logo_utm" />
+
+        <TextView
+            android:id="@+id/textProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Universitas Trunojoyo"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imgProfileUTM"
+            app:layout_constraintStart_toStartOf="@+id/imgProfileUTM"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfileUTM" />
+
+        <TextView
+            android:id="@+id/textTitleSectionProfileSingkat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Profile Singkat"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textHeader"
+            app:layout_constraintTop_toBottomOf="@+id/textProfileName" />
+
+        <TextView
+            android:id="@+id/textDeskripsiSectionProfileSingkat"
+            android:layout_width="368dp"
+            android:layout_height="279dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:justificationMode="inter_word"
+            android:text="Universitas Trunojoyo Madura atau UTM adalah perguruan tinggi negeri yang terletak di Kamal, Kabupaten Bangkalan, Jawa Timur, Pulau Madura, Indonesia. Universitas Trunojoyo Madura dahulu merupakan universitas swasta yang resmi menjadi perguruan tinggi negeri berdasarkan Keputusan Presiden tanggal 5 Juli 2001. Perguruan tinggi ini diresmikan pada tanggal 23 Juli 2001 oleh Presiden Abdurrahman Wahid. Universitas Trunojoyo Madura merupakan perguruan tinggi negeri ke-7 di Jawa Timur."
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/logo_utm"
+            app:layout_constraintStart_toStartOf="@+id/textTitleSectionProfileSingkat"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleSectionProfileSingkat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
