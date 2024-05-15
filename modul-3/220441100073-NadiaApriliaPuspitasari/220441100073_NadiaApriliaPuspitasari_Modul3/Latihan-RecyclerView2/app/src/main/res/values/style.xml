@@ -1,0 +1,19 @@
+<resources>
+    <style name="circleImageView">
+        <item name="cornerSize">50%</item>
+        <item name="strokeColor">#FFA500</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="sharpImageViewStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Corner10" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
+
+
+</resources>

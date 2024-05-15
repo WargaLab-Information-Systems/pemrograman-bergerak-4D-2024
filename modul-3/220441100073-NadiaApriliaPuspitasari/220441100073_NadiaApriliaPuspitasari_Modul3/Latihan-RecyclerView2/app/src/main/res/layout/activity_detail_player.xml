@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPlayerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/bagikan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:elevation="12dp"
+            android:text="Bagikan"
+            app:layout_constraintEnd_toEndOf="@+id/hotel_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/hotel_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Ubud's Hotel"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/bagikan_btn"
+            app:layout_constraintStart_toStartOf="@+id/hotel_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hotel_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Corner10"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotel_name" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/hotel_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Creating a sustainable lifestyle is a meaningful journey and requires the active involvement of every individual. One practical step that can be taken is to understand the impact of every daily action on the environment and look for ways to reduce our ecological footprint. This can start from small decisions such as reducing the use of single-use plastics, choosing eco-friendly products, or recycling waste.The second step that can be taken is to adopt a more thoughtful consumption pattern. This involves choosing products that are durable and recyclable, and avoiding waste. Understanding the life cycle of products, from production to disposal, helps us make more conscious and sustainable choices. In addition, supporting manufacturers and brands that are committed to environmentally friendly production and distribution practices can also have a big impact."
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_image"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
