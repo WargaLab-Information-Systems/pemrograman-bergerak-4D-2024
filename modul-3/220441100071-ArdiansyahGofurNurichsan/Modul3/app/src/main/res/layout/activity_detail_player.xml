@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPlayerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/hotel_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_name"
+            app:shapeAppearanceOverlay="@style/ImageViewShape" />
+
+        <ImageButton
+            android:id="@+id/bagikan_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="12dp"
+            android:src="@drawable/share"
+            android:background="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/hotel_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/hotel_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center"
+            android:text="Kediri Hotel"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/hotel_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="16dp"
+            android:justificationMode="inter_word"
+            android:text="Kediri Hotel adalah sebuah hotel mewah yang terletak di pusat kota yang ramai, menawarkan pengalaman menginap yang tak tertandingi bagi para tamu yang mencari keseimbangan sempurna antara kemewahan, kenyamanan, dan layanan berkualitas. Dengan desain interior yang elegan dan modern, serta fasilitas yang lengkap, Kediri Hotel menjadi pilihan utama bagi pelancong bisnis maupun wisatawan yang menginginkan akomodasi yang istimewa. Setiap kamar dilengkapi dengan fasilitas modern seperti WiFi gratis, TV layar datar, dan kamar mandi pribadi dengan perlengkapan mandi mewah. Selain itu, para tamu dapat menikmati berbagai pilihan kuliner lezat di restoran hotel yang terkenal dengan hidangan lokal dan internasional yang disajikan dengan cita rasa yang istimewa. Dengan pemandangan kota yang menakjubkan dari kamar-kamar yang luas, Kediri Hotel memberikan pengalaman menginap yang tak terlupakan bagi setiap tamu yang datang."
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
