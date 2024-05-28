@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Modul4new" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+<!--        <item name="android:windowBackground">@color/white</item>-->
+    </style>
+
+
+    <style name="RoundedImageShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ImageRound">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+
+
+
+
+</resources>
