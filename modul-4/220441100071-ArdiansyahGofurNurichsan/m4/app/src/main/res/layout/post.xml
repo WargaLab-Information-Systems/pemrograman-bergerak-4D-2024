@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/id_profil"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/profil1"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImageShape" />
+
+        <TextView
+            android:id="@+id/id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ardiansyah"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@+id/id_profil"
+            app:layout_constraintTop_toTopOf="@+id/id_profil" />
+
+        <TextView
+            android:id="@+id/id_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\@Ardiansyah"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/id_name"
+            app:layout_constraintTop_toBottomOf="@+id/id_name" />
+
+        <ImageView
+            android:id="@+id/id_more"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/more"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Community Events!"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/id_profil"
+            app:layout_constraintTop_toBottomOf="@+id/id_profil" />
+
+        <TextView
+            android:id="@+id/id_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Community Events! Beach cleaning activities in the eastern harbor area in order to maintain natural stability. #recycle #ecofriendly #newnormal #2024gantisepatu"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_title" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 minuters ago"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@+id/id_content"
+            app:layout_constraintTop_toBottomOf="@+id/id_content" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/id_post"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:shapeAppearanceOverlay="@style/ImageRound" />
+
+        <ImageView
+            android:id="@+id/id_love"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/love"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@+id/id_post"
+            app:layout_constraintTop_toBottomOf="@+id/id_post" />
+
+
+        <TextView
+            android:id="@+id/text_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:text="20"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@+id/id_love"
+            app:layout_constraintTop_toTopOf="@+id/id_love" />
+
+        <ImageView
+            android:id="@+id/id_komen"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/komentar"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/text_love"
+            app:layout_constraintTop_toTopOf="@+id/id_love" />
+
+        <TextView
+            android:id="@+id/text_komen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="20"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@+id/id_komen"
+            app:layout_constraintTop_toTopOf="@+id/text_love" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/share"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pin"
+            app:layout_constraintEnd_toEndOf="@+id/id_post"
+            app:layout_constraintTop_toTopOf="@+id/id_komen" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
