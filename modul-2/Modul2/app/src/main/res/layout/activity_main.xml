@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--ctrl + alt + l-->
+    <ImageView
+        android:id="@+id/imageViewh1"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="top"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/halaman_depan" />
+
+    <TextView
+        android:id="@+id/textViewh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Universitas Trunojoyo"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textViewh2"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="Selamat datang di Aplikasi milik Universitas Trunojoyo"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewh3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="59dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Masukkan nama kamu"
+        android:textColor="#777676"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageViewh2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/line_1" />
+
+    <Button
+        android:id="@+id/buttonh1"
+        android:layout_width="283dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/bg_button1"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingStart="100dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="100dp"
+        android:paddingBottom="10dp"
+        android:text="Lanjut"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
