@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">modul2_praktikum</string>
+    <string name="utm">Universitas Trunojoyo</string>
+
+    <string name="selamat_datang">Selamat datang di Aplikasi \nmilik Universitas Trunojoyo</string>
+    <string name="edit">Masukkan nama kamu</string>
+    <string name="gambar">ini gambar</string>
+    <string name="button">Lanjut</string>
+    
+    <string name="beranda">Beranda</string>
+    <string name="aktivitas">Aktivitas Kegiatan</string>
+    <string name="artikel">Artikel</string>
+    <string name="photo1">ini foto 1</string>
+    <string name="photo2">ini foto 2</string>
+    <string name="judul">Terlalu Jago, Trunojoyo Juara Lagi</string>
+    <string name="deskripsi">Universitas Trunojoyo berhasil meraih juara 1 dalam ajang perlombaan debat nasional yang diselenggarakan oleh...</string>
+    
+    <string name="profile">Profile</string>
+    <string name="profile_singkat">Profile Singkat</string>
+    <string name="isi_profile">Universitas Trunojoyo Madura atau UTM adalah perguruan tinggi negeri yang terletak di Kamal,
+        Kabupaten Bangkalan, Jawa Timur, Pulau Madura, Indonesia. Universitas Trunojoyo Madura dahulu
+        merupakan universitas swasta yang resmi menjadi perguruan tinggi negeri berdasarkan
+        Keputusan Presiden tanggal 5 Juli 2001. Perguruan tinggi ini diresmikan pada tanggal 23 Juli 2001
+        oleh Presiden Abdurrahman Wahid. Universitas Trunojoyo Madura merupakan perguruan tinggi negeri ke-7 di Jawa Timur.</string>
+
+
+</resources>
